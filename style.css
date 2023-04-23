@@ -1,0 +1,246 @@
+body {
+    background-image: url('./pics/backgroundImage.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 2% 5% 0 5%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    margin-right: auto;
+    width: 9rem;
+    height: 4rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    color: #ffffff;
+    text-shadow: 0 0 2px #000000;
+    font-size: 16px;
+    font-family: sans-serif;
+    position: absolute;
+    left: 25%;
+    user-select: none;
+}
+
+nav ul li {
+    margin-right: 2rem;
+    transition-duration: .2s;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    opacity: 0.7;
+}
+
+nav ul li:active{
+    cursor: pointer;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.search-bar {
+    position: absolute;
+    right: 10%;
+    width: 20rem;
+    height: 2.5rem;
+    background: rgba(255, 255,255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 0px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: 0 0 2px #000000;
+}
+
+::placeholder {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.search-bar button img {
+    width: 25px;
+    transition-duration: .5s;
+}
+
+.search-bar button img:hover {
+    transform: scale(1.1);
+}
+
+.search-bar button img:active {
+    transform: scale(1);
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.user-logo {
+    margin-left: auto;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+
+
+.main-text {
+    position: relative;
+    top: 2vh;
+    width: 40%;
+}
+
+.main-text .title {
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 10vh;
+    line-height: 90%;
+}
+
+.main-text .subtext {
+    color: #ffffff;
+    font-family: sans-serif;
+    margin-top: -5%;
+}
+
+.main-text button{
+    border-radius: 40px;
+    padding: 1rem 3rem;
+    border: 2px solid rgb(233, 158, 215);
+    background: transparent;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 3vh;
+    backdrop-filter: blur(4px) saturate(180%);
+    transition-duration: 0.2s;
+}
+
+.main-text button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgb(196, 124, 187);
+}
+
+.main-text button:active {
+    transform: scale(1);
+}
+
+footer {
+    position: absolute;
+    bottom: -30%;
+    right: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    width: 50%;
+    height: 60vh;
+}
+
+.column {
+    box-shadow: 0 0 2px white;
+    background-color: rgba(196, 124, 187, 0.4);
+    backdrop-filter: blur(4px);
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.column .first-title {
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 3.5vh;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.7;
+    border-bottom: 2px solid white;
+    width: 80%; 
+}
+
+.column .text {
+    z-index: -1;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 2.5vh;
+    opacity: 0;
+    transition: opacity 0.5s ease, bottom 0.5s ease 2s;
+}
+
+
+.first-column{
+    position: relative;
+    bottom: 0;
+    transition: transform 0.3s ease, bottom 0.3s ease 0.5s;
+}
+
+.first-column:hover {
+    transform: translateY(-15vh);
+}
+
+.first-column:hover .text {
+    opacity: 1;
+}
+
+.first-column:not(:hover) {
+    transform: translateY(0%);
+}
+
+.second-column{
+    position: relative;
+    bottom: 0;
+    transition: transform 0.3s ease, bottom 0.3s ease 0.5s;
+}
+
+.second-column:hover {
+    transform: translateY(-15vh);
+}
+
+.second-column:hover .text {
+    opacity: 1;
+}
+
+.second-column:not(:hover) {
+    transform: translateY(0%);
+}
+
+.third-column{
+    position: relative;
+    bottom: 0;
+    transition: transform 0.3s ease, bottom 0.3s ease 0.5s;
+}
+
+.third-column:hover {
+    transform: translateY(-15vh);
+}
+
+.third-column:hover .text {
+    opacity: 1;
+}
+
+.third-column:not(:hover) {
+    transform: translateY(0%);
+}

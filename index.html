@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="root">
+        <nav>
+            <div class="logo">
+                <img src="./pics/logo.png">
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Pricing</li>
+                <li>Contact</li>
+                <li>Blog</li>
+            </ul>
+            <form action="" class="search-bar">
+                <input type="text" placeholder="Search anything">
+                <button id="searchbutton" onclick="getData(); return false;"><img src="./pics/search.png"></button>
+            </form>
+            <img src="./pics/user-logo.png" class="user-logo">
+        </nav>
+
+        <div class="main-text">
+            <p class="title">it's a big world out there, go explore</p>
+            <p class="subtext">Reading a book about a travel journey can transport you to another place, immersing you in new cultures and experiences. It's a cost-effective way to explore the world from the comfort of your own home, and it might even inspire you to plan your own adventure.</p>
+            <button onclick="bookSchedule()">Book Now</button>
+        </div>
+
+        <footer>
+            <div class="first-column column">
+                <p class="first-title">Top Choices</p>
+                <p class="text">Total 800+ destinations you can book</p>
+            </div>
+            <div class="second-column column">
+                <p class="first-title">Quality Guidance</p>
+                <p class="text">Our tour guides have 20+ years of experience</p>
+            </div>
+            <div class="third-column column">
+                <p class="first-title">Easy Bookings</p>
+                <p class="text">Best ticket booking system</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
